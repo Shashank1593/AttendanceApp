@@ -1,0 +1,222 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text view -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Student Registration"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/trebuc"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spindept">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- User Name Edit Text Area -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/st_name"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Roll No Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Roll No."
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_rate_review_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/st_rollno"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Code Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Code"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/st_code"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--List View -->
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:id="@+id/list"
+                >
+
+
+            </Spinner>
+
+            <!-- Mobile No Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/st_mob"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Guardian Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Guardian Name"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/st_gname"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Guardian Mobile No Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Guardian's Mob.No."
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/st_gmob"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Login Button -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/trebuc"
+                android:layout_marginBottom="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                android:background="@color/colorAccent"
+                android:onClick="st_reg"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

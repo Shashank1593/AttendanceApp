@@ -1,0 +1,251 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text view -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Nodal Officer Profile"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/trebuc"
+        />
+    <!-- Cancle Button -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/trebuc"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp"
+        android:background="@color/colorAccent"
+        android:onClick="profile_Edit"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- User Name Edit Text Area -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:enabled="false"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/profile_name"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Code Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Code"
+                    android:enabled="false"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/profile_code"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Department View -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Department"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_assignment_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/profile_department"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Email Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textEmailAddress"
+                    android:enabled="false"
+                    android:id="@+id/profile_email"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textPassword"
+                    android:enabled="false"
+                    android:id="@+id/profile_pass"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Mobile No Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:enabled="false"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/profile_mob"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <!-- Update Button -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/trebuc"
+                android:layout_marginBottom="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/update"
+                android:background="@color/colorAccent"
+                android:onClick="profile_Update"
+                />
+
+            <!-- Cancle Button -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancle"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/trebuc"
+                android:layout_marginBottom="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/close"
+                android:background="@color/colorAccent"
+                android:onClick="profile_cancle"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

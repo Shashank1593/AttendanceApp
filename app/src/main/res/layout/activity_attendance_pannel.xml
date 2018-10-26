@@ -1,0 +1,70 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Attendance Panel"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/trebuc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_studata"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/colorAccent"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="5dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <!-- Submit Button -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:fontFamily="@font/trebuc"
+                android:textSize="15sp"
+                android:onClick="Att_submit"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/ic_assignment_black_24dp"
+                android:background="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="5"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Roll No"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Department Name"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Week Day"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stu_review"
+                ></ListView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

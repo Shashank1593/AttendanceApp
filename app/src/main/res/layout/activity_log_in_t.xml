@@ -1,0 +1,89 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text view -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Nodal Officer Log in"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/trebuc"
+        />
+
+    <!-- User Name Edit Text Area -->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:id="@+id/tech_user"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="text"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Edit Text -->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/tech_pass"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Login Button -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/trebuc"
+        android:textSize="15sp"
+        android:onClick="logint"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:background="@color/colorAccent"
+        />
+
+</LinearLayout>

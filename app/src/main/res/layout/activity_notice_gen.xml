@@ -1,0 +1,160 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="5"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--To Student -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:weightSum="3"
+            android:onClick="tostudent"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_assignment_ind_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Student"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- To Guardian -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:onClick="toguardian"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_assignment_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Guar."
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- To Department -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:onClick="todept"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_rate_review_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Dept."
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

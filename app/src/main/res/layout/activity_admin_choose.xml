@@ -1,0 +1,218 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:weightSum="3"
+            android:onClick="stureg"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_person_add_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stu.Reg."
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Teacher Registration -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:onClick="officer"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_person_add_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nodal.Reg."
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <!-- Department List -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:onClick="dplist"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_person_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dept.List"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+           </LinearLayout>
+
+        <!-- Notice List -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:onClick="notice"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_assignment_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/trebuc"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

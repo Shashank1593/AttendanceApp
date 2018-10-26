@@ -1,0 +1,79 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_sname"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_srollno"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_department"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_month"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_year"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/trebuc"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_day"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/trebuc"
+        android:id="@+id/tv_status"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/trebuc"
+        android:id="@+id/tv_weekday"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_attdate"
+        android:fontFamily="@font/trebuc"
+        android:gravity="center"/>
+
+
+</LinearLayout>

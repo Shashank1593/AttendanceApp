@@ -1,0 +1,196 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text view -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Nodal Officer"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/trebuc"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinofficer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- User Name Edit Text Area -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/officer_name"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Code Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Code"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:id="@+id/officer_code"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--List View -->
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:id="@+id/dlist"
+                />
+
+            <!-- Email Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/officer_email"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textPassword"
+                    android:id="@+id/officer_pass"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Mobile No Edit Text -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/officer_mob"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <!-- Login Button -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/trebuc"
+                android:layout_marginBottom="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                android:background="@color/colorAccent"
+                android:onClick="add_nodal"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
