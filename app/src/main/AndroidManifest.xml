@@ -13,9 +13,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,20 +30,48 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".LogIn" />
-        <activity android:name=".StudentRegistration" />
-        <activity android:name=".UserChoose" />
-        <activity android:name=".LogInT" />
-        <activity android:name=".AttendancePannel" />
-        <activity android:name=".AdminChoose" />
-        <activity android:name=".TeacherRegistration" />
-        <activity android:name=".DepartmentList" />
-        <activity android:name=".TeacherChoose" />
-        <activity android:name=".ReportGen" />
-        <activity android:name=".ReviewStudent" />
-        <activity android:name=".NoticeGen" />
-        <activity android:name=".ToDepartment" />
-        <activity android:name=".NodalProfile" />
+        <activity android:name=".LogIn"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".StudentRegistration"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UserChoose"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LogInT"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AttendancePannel"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AdminChoose"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TeacherRegistration"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DepartmentList"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TeacherChoose"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ReportGen"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ReviewStudent"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NoticeGen"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ToDepartment"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NodalProfile"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
